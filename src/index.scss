@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary text-sm bg-white text-gray-700 dark:text-gray-200 dark:bg-[rgb(16,23,42)] h-screen;
+  }
+}
+
+.ql-editor {
+  @apply text-base;
+}
+
+.post-content {
+  p {
+    @apply mb-2 text-lg;
+  }
+  h1 {
+    @apply text-3xl font-semibold mx-0 my-6;
+  }
+  h2 {
+    @apply text-[25px] mx-0 my-6;
+  }
+  a {
+    @apply text-[rgb(73,149,199)] no-underline;
+    &:hover {
+      @apply underline;
+    }
+  }
+}
+.dark {
+  .post-content {
+    a {
+      color: red;
+    }
+  }
+}
